@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cardapio</string>
+    <string name="esqueci_senha">"Esqueci a senha"</string>
+    <string name="cadastrar">"Cadastrar"</string>
+    <string name="login">"Login"</string>
+
+</resources>

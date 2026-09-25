@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormLogin">
+
+
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:src="@drawable/cardapio"
+        android:layout_height="200dp"
+        android:layout_width="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+
+
+        />
+
+
+
+    <View
+        android:id="@+id/CaixaLogin"
+        style="@style/CaixaLogin"
+        android:background="@drawable/caixalogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_login"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+        app:layout_constraintStart_toStartOf="@id/CaixaLogin"
+        app:layout_constraintEnd_toEndOf="@id/CaixaLogin"
+        app:layout_constraintTop_toTopOf="@id/CaixaLogin"
+        android:hint="Email"
+        android:textColorHint="#A9A9A9"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_email"
+        android:paddingEnd="10dp"
+        android:inputType="textEmailAddress"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_text"
+        android:background="@drawable/edit_text"
+        app:layout_constraintStart_toStartOf="@id/CaixaLogin"
+        app:layout_constraintEnd_toEndOf="@id/CaixaLogin"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        android:hint="Senha"
+        android:textColorHint="#A9A9A9"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_eye"
+        android:paddingEnd="10dp"
+        android:inputType="textPassword"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        style="@style/ButtonLogin"
+        app:layout_constraintStart_toStartOf="@id/CaixaLogin"
+        app:layout_constraintEnd_toEndOf="@id/CaixaLogin"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        android:background="@drawable/buttonlogin"
+        android:text="@string/login"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/cadastrar"
+        style="@style/cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+        android:text="@string/cadastrar"
+
+        />
+
+
+    <TextView
+        android:id="@+id/esqueciSenha"
+        style="@style/esquecisenha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrar"
+        android:text="@string/esqueci_senha"
+
+        />
+
+
+
+
+
+
+    <ProgressBar
+        style="@style/progressbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CaixaLogin"
+
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
